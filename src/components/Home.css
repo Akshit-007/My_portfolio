@@ -1,0 +1,56 @@
+.external
+{
+    padding-left:30px;
+}
+.et
+{
+    height:300px;
+    width:300px;
+}
+
+@media only screen and (min-width: 250px) {
+  .external
+{
+    padding-top:40px;
+    padding-left:10%;
+}
+}
+@media only screen and (min-width: 320px) {
+  .external
+{
+    padding-top:40px;
+    padding-left:12%;
+}
+}
+@media only screen and (min-width: 400px) {
+  .external
+{
+     padding-top:40px;
+    padding-left:20%;
+}
+}
+@media only screen and (min-width: 700px) {
+  .external
+{
+     padding-top:160px;
+    padding-left:20px;
+}
+}
+@media only screen and (min-width: 700px) {
+  .external
+{
+     padding-top:160px;
+    padding-left:15%;
+}
+}
+@media only screen and (min-width: 1000px) {
+  .external
+{
+     padding-top:100px;
+    padding-left:15%;
+}
+.txt
+{
+  padding-top:150px;
+}
+}

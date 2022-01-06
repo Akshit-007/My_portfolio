@@ -1,0 +1,52 @@
+Event will start in 2 mins.
+
+Slide-1:-
+
+good evening everyone. 
+my name is smit bhansali, the media team lead of codechef bvm chapter welcoming you all in our orientation event of codechef bvm chapter. 
+in this session we will discuss all things that will help you getting started in competitive coding.
+before starting the presentation i will let my teammates introduce themselves.
+Now i will call vatsal sir,faculty member of codechef bvm chapter to give a short speech.
+Thank you sir for your kind words.
+before our presentation starts i would like to note all of you not to interrupt in between of the presentation to ask doubts instead you can ask your doubts in chatbox and we will answer them all at end of the presentation.
+Now i will ask akshit trivedi to elaborate what is codechef bvm chapter.
+
+slide-2:-(after akshit)
+
+Thank you akshit for clearing the main aspects of the codechef bvm chapter.
+Moving on...
+
+slide-3:-
+
+Here in this slide as we can see we will cover all things that you need to start your competitive coding journey.
+so lets not wait more.
+i will call pratham to breif you all about competitive coding and its benefits.
+
+slide-4,5,6,7,8:-(after pratham)
+
+thank you pratham for introducing and breifing about competitive coding.
+now you all must be thinking about what skills are needed to start competitve coding.
+for that i will now again call akshit to acknowledge you all about the pre-requisites of competitive coding.
+
+slide-9,10,11,12,13:-(after akshit)
+
+thank you akshit for acknowledging us all that what is needed to start competitive coding.
+i hope you all understand things about competitive coding and if you dont you can ask your doubts in chat section and we will answer it later.
+now i will call sahil to bust some myths and demonstrate competitive.
+
+slide-14,15,16:-(after sahil)
+
+thank you sahil for the wonderful demonstration of competitive coding.
+
+slide-17:-
+
+as now our presentation is over we will answer all the doubts one by one.
+(questions in chat section).
+
+slide-18:-
+
+Thank you everyone for being here through the whole session.
+i hope that everyone present here will make their account on codechef and start their competitive coding journey right today.
+to stay connected with us and be updated for future events scan the left qr code.
+and i would like everyone to give feedback that how our presentation was by scanning the right qr code.
+thats it thank you everyone see you in the next event.
