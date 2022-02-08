@@ -1,5 +1,41 @@
-.active 
+.active
 {
-   color:rgb(65, 65, 206);
-   border-bottom:2px solid blue;
+    /* color:rgba(139, 92, 246); */
+    /* transition-duration: 1s; */
+    color:white;
+    width:100px;
+    padding:5px 10px;
+    background-color: #3b318b8c;
+    border-radius:7px;
+    cursor:pointer;
+    margin-left: 10%;
+    /* border: 2px solid white; */
+}
+.not-active 
+{
+    margin-left: 10%;
+    color:white;
+    background-color:none;
+    cursor:pointer;
+    padding-left: 10px;
+}
+.tech-known
+{
+     margin-left: 20%;
+     display: inline-block;
+     /* background-color: red; */
+}
+.tech-single
+{
+     display: inline-block;
+     background-color:#4e45a73d;
+     margin:5px 10px;
+     border-radius:10px;
+}
+
+.tech-text
+{
+    padding-top: 5px;
+    color:white;
+    text-align:center;
 }

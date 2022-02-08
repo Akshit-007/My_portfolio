@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import $ from 'jquery';
-import './Tools.css';
+
 import { DiReact } from "react-icons/di";
 import { DiBootstrap } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
@@ -17,15 +16,13 @@ import { SiJsonwebtokens } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiNetlify } from "react-icons/si";
-
+import './Tools.css';
 function Tools() {
 
     const [tool, settool] = useState('frontend');
 
     const fendactive = () => {
 
-        $('.active').removeClass('active');
-        $('.fend').addClass('active');
         settool('frontend')
 
 
@@ -33,20 +30,16 @@ function Tools() {
 
     const bendactive = () => {
 
-        $('.active').removeClass('active');
-        $('.bend').addClass('active');
         settool('backend')
 
 
     }
     const toolactive = () => {
 
-        $('.active').removeClass('active');
-        $('.tool').addClass('active');
         settool('tools')
     }
     return (
-        <div className="w-9/10  min-h-9/10 xl:h-9/10  bg-gray-800 mx-auto mt-10 rounded-lg shadow-2xl p-8">
+        <div className="w-9/10   min-h-screen  bg-gray-800 mx-auto my-10 rounded-lg shadow-2xl p-8">
 
 
             <div class="inline-flex">
@@ -54,45 +47,66 @@ function Tools() {
                     <span class="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-purple-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-4 w-4 bg-purple-500"></span>
                 </div>
-                <div className="font-mono ml-6 text-white text-3xl">TOOLS</div>
+                <div className="font-mono ml-6 text-white text-3xl">TOOLS 👨‍🔧</div>
             </div>
 
-            <div class="flex flex-col lg:flex-row m-10">
-                <div className="fend text-white w-24 text-lg text-mono active cursor-pointertext-left lg:text-center" onClick={fendactive}>Front-End</div>
-                <div className="bend text-white w-24 text-lg text-mono cursor-pointer text-left lg:text-center" onClick={bendactive}> Back-End </div>
-                <div className="tool text-white w-24 text-lg text-mono cursor-pointer text-left lg:text-center" onClick={toolactive}>Tools</div>
-            </div>
+
+            <br />
+            <br />
+
+
 
             {tool === 'frontend' ? <>
-                <div class="flex flex-wrap justify-center pl-10 sm:justify-center md:justify-start">
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiReact className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">REACT </div> </div>
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiBootstrap className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">BOOTSTRAP </div> </div>
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiCss3 className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">CSS </div> </div>
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiHtml5 className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">HTML </div> </div>
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiJavascript1 className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">JAVASCRIPT </div> </div>
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiJqueryLogo className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">JQUERY </div> </div>
-                    <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><SiTailwindcss className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">TAILWIND </div> </div>
+                <div className="active" onClick={fendactive}>Front-End </div>
+                <br />
+                <div class="tech-known">
+                    <div className="tech-single "><DiReact className="text-purple-600 h-16 w-24 " /> <div className="tech-text">REACT </div> </div>
+                    <div className="tech-single "><DiBootstrap className="text-purple-600 h-16 w-24 " /> <div className="tech-text">BOOTSTRAP </div> </div>
+                    <div className="tech-single "><DiCss3 className="text-purple-600 h-16 w-24 " /> <div className="tech-text">CSS </div> </div>
+                    <div className="tech-single "><DiHtml5 className="text-purple-600 h-16 w-24 " /> <div className="tech-text">HTML </div> </div>
+                    <div className="tech-single "><DiJavascript1 className="text-purple-600 h-16 w-24 " /> <div className="tech-text">JAVASCRIPT </div> </div>
+                    <div className="tech-single "><DiJqueryLogo className="text-purple-600 h-16 w-24 " /> <div className="tech-text">JQUERY </div> </div>
+                    <div className="tech-single "><SiTailwindcss className="text-purple-600 h-16 w-24 " /> <div className="tech-text">TAILWIND </div> </div>
 
                 </div>
+                <br />
+                <br />
+                <div className="not-active " onClick={bendactive}> Back-End </div>
+                <br />
+                <div className="not-active " onClick={toolactive}>Tools</div>
             </> :
                 <>
+
                     {tool === 'backend' ? <>
-                        <div class="flex flex-wrap justify-center pl-10 sm:justify-center md:justify-start">
-                            <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiNodejsSmall className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">NODE JS </div> </div>
-                            <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><SiJsonwebtokens className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">JWT </div> </div>
-                            <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><SiFirebase className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">FIREBASE </div> </div>
-                            <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiMongodb className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">Mongo DB </div> </div>
-
-
+                        <div className="not-active " onClick={fendactive}>Front-End </div>
+                        <br />
+                        <div className="active" onClick={bendactive}> Back-End </div>
+                        <br />
+                        <div class="tech-known">
+                            <div className="tech-single "><DiNodejsSmall className="text-purple-600 h-16 w-24 " /> <div className="tech-text">NODE JS </div> </div>
+                            <div className="tech-single "><SiJsonwebtokens className="text-purple-600 h-16 w-24 " /> <div className="tech-text">JWT </div> </div>
+                            <div className="tech-single "><SiFirebase className="text-purple-600 h-16 w-24 " /> <div className="tech-text">FIREBASE </div> </div>
+                            <div className="tech-single "><DiMongodb className="text-purple-600 h-16 w-24 " /> <div className="tech-text">Mongo DB </div> </div>
                         </div>
+                        <br />
+                        <br />
+                        <div className="not-active " onClick={toolactive}>Tools</div>
+
                     </> :
                         <>
-                            <div class="flex flex-wrap justify-center pl-10 sm:justify-center md:justify-start">
-                                <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><SiPostman className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">POSTMAN </div> </div>
-                                <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiGithubBadge className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">GITHUB </div> </div>
-                                <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiVisualstudio className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">VS CODE </div> </div>
-                                <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><SiNetlify className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">NETLIFY </div> </div>
-                                <div className="transition duration-500 ease-in-out h-30 w-24 bg-gray-700 rounded-lg mr-5 mb-3 hover:bg-white text-center transform hover:-translate-y-1 hover:scale-110 "><DiHeroku className="text-purple-600 h-16 w-24 " /> <div className="text-purple-600 text-mono">HEROKU </div> </div>
+                            <div className="not-active " onClick={fendactive}>Front-End </div>
+                            <br />
+                            <div className="not-active " onClick={bendactive}> Back-End </div>
+                            <br />
+                            <div className="active" onClick={toolactive}>Tools</div>
+                            <br />
+
+                            <div class="tech-known">
+                                <div className="tech-single "><SiPostman className="text-purple-600 h-16 w-24 " /> <div className="tech-text">POSTMAN </div> </div>
+                                <div className="tech-single "><DiGithubBadge className="text-purple-600 h-16 w-24 " /> <div className="tech-text">GITHUB </div> </div>
+                                <div className="tech-single "><DiVisualstudio className="text-purple-600 h-16 w-24 " /> <div className="tech-text">VS CODE </div> </div>
+                                <div className="tech-single "><SiNetlify className="text-purple-600 h-16 w-24 " /> <div className="tech-text">NETLIFY </div> </div>
+                                <div className="tech-single "><DiHeroku className="text-purple-600 h-16 w-24 " /> <div className="tech-text">HEROKU </div> </div>
 
 
                             </div>

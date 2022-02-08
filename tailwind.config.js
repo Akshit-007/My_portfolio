@@ -35,6 +35,12 @@ module.exports = {
       }
     },
   },
+  dropShadow: {
+    '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+  },
+  minHeight: {
+    '9/10': '90%',
+  },
   variants: {
     extend: {},
   },

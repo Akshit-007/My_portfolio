@@ -5,12 +5,16 @@ import Tools from './components/Tools'
 import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
+import './App.css'
+import countapi from 'countapi-js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
+  countapi.hit("ae42216b-5ad7-413d-9be0-36f3b7b9aaa7").then((result) => { });
+
   return (
-    <div className="w-screen h-screen bg-gray-200">
+    // <div className="w-screen h-min-screen bg-gray-200">
+    <div className="bground">
 
       <Router>
 
@@ -25,7 +29,7 @@ function App() {
           <Route path="/contact" exact component={Contact} />
 
         </Switch>
-
+        <br />
         <Footer />
 
       </Router>
